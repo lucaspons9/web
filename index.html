@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <script src="https://use.fontawesome.com/9ff0ad3ed9.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/ css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta charset="utf-8">
+    <title>Garlana</title>
+    <link rel="shortcut icon" href="./img/logo.png">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="./img/logo.png"></a>
+        <div class="nav-text" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li class="nav-item"><a href="./index.html">inicio</a></li>
+                <li class="nav-item"><a href="https://tienda.garlana.com">a domicilio</a></li>
+                <li class="nav-item"><a href="./contacto.html">contacto</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="head-section">
+        <div class="wrapper">
+            <div class="typing-demo">
+                Arroces que enamoran.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="calls">
+    <div class="call-to">
+    <div class="ep-text">
+        <h1>Amamos lo que hacemos</h1>
+    </div>
+    <div class="ep">
+        <div class="ep-col">
+            <div class="col-text">
+                <h1>Pedido a Domicilio</h1>
+                <p>Disfruta de nuestro arroces a través de nuestra <span class="tienda-online"><a href="https://tienda.garlana.com">Tienda Online</a> </span>. ¡Del envío nos ocupamos nosotros!</p>
+            </div>
+        </div>
+        <div class="ep-col">
+            <div class="col-text">
+                <h1>Haz tu reserva ya!</h1>
+                <p>Elije el día y hora de la semana que quieras hacer la reserva. </p>
+            </div>
+        </div>
+        <div class="ep-col">
+            <div class="col-text">
+                <h1>Arroces que enamoran</h1>
+                <p>Nuestro producto estrella son los Arroces, tradición en Garlana desde 1979.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="map">
+<div class="map-container">
+    <div class="text-map">
+        <h1>¿Dónde estamos?</h1>
+    </div>
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.216008144799!2d2.1233669150654766!3d41.391115103727685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49867f9a2dfb1%3A0x75f6df3d99cb9a14!2sGarlana!5e0!3m2!1sen!2ses!4v1645655432847!5m2!1sen!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+</section>
+
+<!-- CLIENTES -->
+<section class="clientes">
+<div class="clientes-text">
+    <h1>¿Qué dicen nuestros clientes?</h1>
+</div>
+<div class="opinions">
+    <div class="opinion-item">
+        <img src="./img/img/user1.jpg">
+        <div class="opinion-item-text">
+            <p>Todo lo que sale de esa cocina está de gloria bendita! Como curiosidad era uno de los locales preferidos de Xavier Cugat.</p>
+            <h2>Cristinie Berkley</h2>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        </div>
+    </div>
+    <div class="opinion-item">
+        <img src="./img/img/user2.jpg">
+        <div class="opinion-item-text">
+            <p>No hay mayor recompensa un domingo que descubrir Garlana a domicilio. La paella Parellada excepcional! Felicidades por la iniciativa digital.</p>
+            <h2>David Byer</h2>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+    </div>
+</div>
+<div class="recs">
+<a href="http://www.tripadvisor.es/Restaurant_Review-g187497-d4795077-Reviews-Garlana-Barcelona_Catalonia.html" target="_blank" class="special-rec"><img src="./img/tenedor.png"></a>
+<a href="http://www.tripadvisor.es/Restaurant_Review-g187497-d4795077-Reviews-Garlana-Barcelona_Catalonia.html" target="_blank"><img src="./img/tripad.png"></a>
+<a href="#" target="_blank"><img src="./img/yelp.svg"></a>
+</div>
+</section>
+
+<!-- ABOUT US -->
+<section class="about">
+    <div class="logos">
+        <a href="https://www.instagram.com/garlana_/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/Garlana?ref=hl" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-google"></i></a>
+    </div>
+</section>
+<!-- JS -->
+<script>
+    var navLinks = document.getElementById("nav-links");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

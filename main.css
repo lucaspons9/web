@@ -6,7 +6,7 @@
     font-size: 15px;
 }
 body {
-    background: #fffefc;
+    background: #fcf7ed;
 }
 img {
     width: 90px;
@@ -25,10 +25,11 @@ img {
     background: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0))
 }
 .header img {
-    width: 50px;
+    width: 60px;
+    border-radius: 10px;
 }
 .nav-text {
-    width: 35%;
+    width: 15%;
 }
 .nav-text ul {
     margin-top: 15px;
@@ -39,7 +40,7 @@ img {
 .nav-item a {
     text-decoration: none;
     color: white;
-    font-size: 17px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 .nav-item a::after {
@@ -94,18 +95,44 @@ img {
   }
 }
 
+/* Sobre nosotros */
+
+.ab-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 75px;
+    text-align: center;
+}
+.ab-us h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+}
+.ab-us-comment {
+    width: 70%;
+    background-color: #ffe8bf;
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+}
+.ab-us-comment p cite{
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: lighter;
+}
+
 /* CALL TO ACTION */
 .call-to {
     width: 80%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: center;
 }
 .ep-text h1 {
     font-size: 40px;
     font-weight: lighter;
     margin-bottom: 60px;
-    text-transform: capitalize;
 }
 .ep {
     display: flex;
@@ -380,7 +407,7 @@ opacity: 0.9;
         display: block;
     }
     .nav-text {
-        position: absolute;
+        position: fixed;
         background: #f44336;
         height: 100vh;
         width: 200px;
